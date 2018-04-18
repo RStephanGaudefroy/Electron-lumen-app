@@ -1,0 +1,16 @@
+{
+  "name": "electrontest",
+  "version": "18.2.28",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "me",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "fullcalendar": "^3.9.0",
+    "jquery": "^3.3.1",
+    "node-notifier": "^5.2.1"
+  }
+}

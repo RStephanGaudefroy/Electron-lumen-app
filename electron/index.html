@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./frontend/css/bootstrap.css">
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Electron Desktop</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+            <li><a id="minimize-btn"><span class="glyphicon glyphicon-unchecked"></span></a></li>
+            <li><a id="close-btn"><span class="glyphicon glyphicon-remove-circle"></span></a></li>
+        </ul>
+    </div>
+    <!--/.nav-collapse -->
+</nav>
+<div class="jumbotron">
+    <div class="container">
+        <h1>Task Notification System</h1>
+    </div>
+</div>
+<!-- /.container -->
+
+<button type = "button" id = "notify" name = "button">
+    Click here to trigger a notification!</button>
+
+</body>
+
+<footer>
+    Crafted By Paul Loh 2016
+</footer>
+<script>
+    // You can also require other files to run in this process
+    // require('./renderer.js')
+
+
+</script>
+
+<!-- Jav -->
+<script src="render.js"></script>
+
+</html>

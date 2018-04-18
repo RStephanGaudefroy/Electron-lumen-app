@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    font-family: 'Muli', sans-serif;
+    -webkit-app-region: drag;
+}
+
+body li {
+    list-style: none;
+}
+
+
+/**LIST*****************************************************************/
+div[data-use="list"] {
+    background-color: lightseagreen;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    overflow-y:scroll;
+}
+
+div[data-use="list"] div{
+    display: block;
+
+}
+/* a remettre
+div[data-use="list"] input{
+    padding: 5px 5px;
+    /*border-radius: 2rem 0 0 2rem;*/
+    /*border-radius: 2rem 2rem 0 0;
+    width: 100%;
+}*/
+/*
+#btnSearch{
+    border-radius:  0 0 2rem 2rem;
+
+}*/
+
+[data-use="menulist"]{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    /*align-items:center;*/
+
+    padding: 0 5px;
+}
+
+/*
+.menuFolder {
+    display: flex;
+
+    flex-direction: column;
+}*/
+/*
+#menuLine {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+}*/
+
+div[data-use="list"] ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+div[data-use="list"] ul li {
+    border-bottom: solid teal;
+    padding-top: 5px;
+
+}
+
+div[data-use="list"] ul li:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+    margin-left: 0;
+    font-weight: bolder;
+
+}
+
+/*div[data-use="list"] div:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+    margin-left: 0;
+    font-weight: bolder;
+
+}*/
+
+div[data-use="app"] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+div[data-use="todo"] {
+    display: flex;
+    flex-direction: column;
+}
+
+div[data-use="folders"] {
+    display: flex;
+    /*flex-direction: row;*/
+    padding: 0;
+    margin: 0;
+}
+
+div[data-use="app"] div:hover, div[data-use="todo"] div:hover, div[data-use="folders"] div:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+    margin-left: 0;
+    padding-left: 5px;
+    font-weight: bolder;
+
+}
+
+div[data-use="folders"] div{
+    display: flex;
+    /*flex-direction: row;*/
+}
+
+div[data-use="app"] div{
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*
+div[data-use="list"] ul li p {
+    padding: 0 5px 0 5px;
+    width: 95%;
+
+    font-weight: normal;
+}*/
+
+/***********************************************************************/
+
+
+div[data-use="content"] {
+    display: flex;
+
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: darkcyan;
+    width: 80vw;
+    height: 100vh;
+
+
+    overflow-y:scroll;
+}
+
+/**************************************************************************/
+
+
+div[data-use="list"] input {
+    font-family: 'Muli', sans-serif;
+}
+
+h2 {
+    font-family: 'Damion', cursive;
+    font-weight: 400;
+    /*color: #4caf50;*/
+    color: darkcyan;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+h2:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 22px;
+    /**background: #4caf50*/
+    background: darkcyan;
+    height: 1px;
+}
+h2 i {
+    font-style: normal;
+    /*background: #fff;*/
+    background: lightseagreen;
+    position: relative;
+    padding: 10px;
+}
+:focus{outline: none;}
+
+div[data-use="list"] h2{
+    margin: 0;
+    font-size: 20px;
+}
+
+div[data-use="list"] p{
+    margin: 9px 0;
+}
+div[data-use="content"] h2{
+    color: lightseagreen;
+    text-align: center;
+    position: relative;
+}
+div[data-use="content"] h2:before {
+    /*position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 22px;*/
+    background: lightseagreen;
+    /*height: 1px;*/
+
+}
+div[data-use="content"] h2 i{
+    /*font-style: normal;*/
+    background: darkcyan;
+    /*position: relative;
+    padding: 10px;*/
+}
+div[data-use="content"] h2:hover {
+    cursor: pointer;
+    color: white;
+    /*background-color:darkslategray;*/
+    /*margin-left: 0;*/
+    /*padding-left: 15px;*/
+    font-weight: bolder;
+}
+
+.col-3
+{float: left; width: 100%; margin: 10px 3%;/*margin: 40px 3%;*/ position: relative;}  /* necessary to give position: relative to parent. */
+input[type="text"]
+{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 95%;/*width: 100%;*/ box-sizing: border-box; letter-spacing: 1px;}
+input[type="password"]
+{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 95%;/*width: 100%;*/ box-sizing: border-box; letter-spacing: 1px;}
+input[type="email"]
+{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 95%;/*width: 100%;*/ box-sizing: border-box; letter-spacing: 1px;}
+
+.col-3 input
+{
+    color: darkslategray;
+}
+
+.effect-16
+{border: 0; padding: 4px 0; border-bottom: 1px solid #ccc; background-color: transparent;}
+
+.effect-16 ~ .focus-border
+{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: darkcyan; transition: 0.4s;}
+.effect-16:focus ~ .focus-border,
+.has-content.effect-16 ~ .focus-border
+{width: 100%; transition: 0.4s;}
+.effect-16 ~ label
+{position: absolute; left: 0; width: 100%; top: 9px; color: darkcyan/*#aaa*/; transition: 0.3s; /*z-index: -1*/; letter-spacing: 0.5px;}
+.effect-16:focus ~ label, .has-content.effect-16 ~ label
+{top: -16px; font-size: 12px; color: darkcyan; transition: 0.3s;}
+.effect-16::placeholder{
+    /*color: lightgreen;*/
+    color: lightseagreen;
+}
+
+@media screen and (max-width: 400px) {
+    /*.col-3 {
+        width: 27.33%;
+    }*/
+
+}
+
+@media screen and (max-width: 580px) {
+    /*.col-3 {
+        width: 27.33%;
+    }*/
+    h2{
+        font-size: 100%;
+    }
+
+}
+
+
+/****************************************************************/
+/* BUTTONS
+//***************************************************************/
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonGreen {
+    background-color: darkcyan;
+    color: black;
+    border: 2px solid lightseagreen;/*#4CAF50;*/
+}
+
+.buttonGreen:hover {
+    background-color: lightseagreen;/*#4CAF50;*/
+    color: white;
+}
+
+.buttonBlue {
+    background-color: darkcyan;
+    color: black;
+    border: 2px solid lightskyblue;/*#4CAF50;*/
+}
+
+.buttonBlue:hover {
+    background-color: lightskyblue;/*#4CAF50;*/
+    color: white;
+}
+
+.buttonRed {
+    background-color: darkcyan;
+    color: black;
+    border: 2px solid lightcoral;/*#4CAF50;*/
+}
+
+.buttonRed:hover {
+    background-color: lightcoral;/*#4CAF50;*/
+    color: white;
+}
+
+/***********************************************************************/
+
+.hidden {
+    display: none;
+}
+/**************************************CALENDAR**************************/
+
+div [data-use="size"] {
+    height: 50vh;
+    width: 70vw;
+}
+table{
+    background-color: whitesmoke;
+}
